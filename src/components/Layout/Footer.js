@@ -73,7 +73,7 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className="px-4 py-6 border-t-2 border-green-600 dark:border-black bg-green-200 dark:bg-black md:flex md:items-center md:justify-between">
-                        <span className="text-sm text-green-900 dark:text-gray-300 sm:text-center">Designed with &#128151; and Developed by Kshitij Gupta &#128512;
+                        <span className="text-sm text-green-900 dark:text-gray-300 sm:text-center">Designed with &#128151; and Developed by Tarique Zafar and Teams;
                         </span>
                         <div className="flex mt-4 space-x-6 sm:justify-center md:mt-0">
                             <a href="/" className="text-green-900 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">

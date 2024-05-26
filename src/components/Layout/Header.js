@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Component, useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from './logoresponsive.svg';
 // import { useNavigate } from 'react-router-dom';
@@ -15,13 +15,13 @@ export default function Header() {
             <nav className="bg-green-300 border-b-2 border-green-800 dark:border-black dark:bg-black md:h-[9vh] h-[8vh] md:sticky top-0 z-10 ">
                 <div className="max-w-screen-xl flex items-center justify-between mx-auto p-[1vh] z-10 ">
                     <Link to="/" className="flex items-center">
-                        <img src={logo} className="h-10 mr-3" alt="Medossier Logo" />
-                        <span className="self-center text-2xl text-green-950 font-semibold  dark:text-pink-400">MedManage</span>
+                        {/* <img src={logo} className="h-10 mr-3" alt="Medossier Logo" /> */}
+                        <span className="self-center text-2xl text-green-950 font-semibold  dark:text-pink-400">MedAssist</span>
                     </Link>
                     <div className="flex flex-col dark:flex-col items-center md:order-2">
                         <button onClick={() => handleclick()} type="button" className="flex mr-3 text-sm bg-gray-100 dark:bg-gray-800 rounded-full md:mr-0 focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom" >
                             <span className="sr-only">Open user menu</span>
-                            <img className="w-8 h-8 rounded-full" src={profilePic} alt='' />
+                            <img className="w-8 h-8 rounded-full " src={profilePic} alt='' />
                         </button>
                         {/* <!-- Dropdown menu --> */}
                         
@@ -33,8 +33,8 @@ export default function Header() {
                         </ul>
                     </div>
                 </div>
-                <div className={` ${profilebtn?"hidden":""} md:w-full md:pl-[82vw] pl-[50vw] md:h-[10vh] w-[95vw] z-[100]`}>
-                        <div  className={`  z-50 md:w-[15vw]  text-base list-none  divide-y divide-green-300 rounded-lg shadow  dark:divide-gray-600" id="user-dropdown dark:bg-LandingPageBK bg-green-100 border-green-400 dark:border-gray-700 border-2`} >
+                <div className={` ${profilebtn?"hidden":""} md:w-full md:pl-[82vw] pl-[50vw] md:h-[10vh] w-[95vw] z-[100] bg-gray-100`}>
+                        <div  className={`  z-50 md:w-[15vw]  text-base list-none  divide-y divide-white rounded-lg shadow  dark:divide-gray-200" id="user-dropdown dark:bg-LandingPageBK bg-green-100 border-green-400 dark:border-gray-700 border-2`} >
                             <div className="px-[3vw] z-50 py-3">
                                 <span className="block text-sm text-gray-900 dark:text-white">Bonnie Green1</span>
                                 <span className="block text-sm  text-gray-500 truncate dark:text-gray-400">name@flowbite.com</span>
